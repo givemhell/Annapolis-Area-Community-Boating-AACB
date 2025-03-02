@@ -1,0 +1,63 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout title="FAQ - AACB">
+  <Header title="FAQ" />
+  <main>
+    <section class="intro">
+      <h2>Frequently Asked Questions</h2>
+      <p>Find answers to common questions about AACB.</p>
+    </section>
+
+    <section class="faq-list">
+      <h3>Common Questions</h3>
+      <ul>
+        <li>
+          <details>
+            <summary>What age group can take the courses?</summary>
+            <p>Our courses are available for all ages, with specific programs tailored for youth, adults, and seniors.</p>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Do you offer scholarships or financial assistance?</summary>
+            <p>Yes, we offer scholarships and financial assistance to eligible participants. Please contact us for more information.</p>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Do I need to have prior boating experience?</summary>
+            <p>No prior boating experience is required for many of our introductory courses. We offer courses for all skill levels.</p>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>What should I bring to class?</summary>
+            <p>Please bring appropriate clothing, sunscreen, a hat, and a water bottle. Specific requirements may vary depending on the course.</p>
+          </details>
+        </li>
+      </ul>
+    </section>
+
+    <section class="search-functionality">
+      <h3>Search Functionality</h3>
+      <input type="search" placeholder="Search FAQs">
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: black;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+</style>

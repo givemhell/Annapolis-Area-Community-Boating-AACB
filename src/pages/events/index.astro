@@ -8,21 +8,14 @@ import Footer from '../../components/Footer.astro';
   <Header title="AACB Events" />
   <main>
     <section class="intro">
-      <h2>Upcoming Events Calendar</h2>
-      <p>Interactive calendar of events such as training sessions, safety seminars, races, and social meet-ups.</p>
+      <h2>Upcoming Events</h2>
+      <p>Check out our calendar of events for training sessions, safety seminars, races, and social meet-ups.</p>
     </section>
 
     <section class="calendar">
-      <div class="event">
-        <h3>Training Session</h3>
-        <p>Date: July 10, 2024</p>
-        <a href="/events/training-session">Register</a>
-      </div>
-      <div class="event">
-        <h3>Safety Seminar</h3>
-        <p>Date: July 17, 2024</p>
-        <a href="/events/safety-seminar">Register</a>
-      </div>
+      <h3>Event Calendar</h3>
+      <p>Interactive calendar of events with filters for event type.</p>
+      <p>Event types: Training, Competitions, Socials, Fundraisers.</p>
     </section>
   </main>
   <Footer />
@@ -37,18 +30,5 @@ import Footer from '../../components/Footer.astro';
     color: black;
     font-size: 20px;
     line-height: 1.6;
-  }
-
-  .calendar {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-top: 20px;
-  }
-
-  .event {
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 5px;
   }
 </style>

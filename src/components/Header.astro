@@ -1,12 +1,16 @@
 ---
+import config from '../../config.json';
+
 interface Props {
   title: string;
 }
+
+const { aacbLogoUrl } = config;
 ---
 
 <header>
   <nav>
-    <a href="/" class="logo">AACB Logo</a>
+    <a href="/" class="logo"><img src={aacbLogoUrl} alt="AACB Logo" /></a>
     <div class="nav-links">
       <a href="/">Home</a>
       <a href="/programs">Programs</a>
@@ -43,6 +47,11 @@ nav {
     font-weight: bold;
     color: white;
     text-decoration: none;
+}
+
+.logo img {
+  width: 50px; /* Adjust as needed */
+  height: auto;
 }
 
 .nav-links {

@@ -4,14 +4,12 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 ---
 
-<Layout title="Contact Us">
+<Layout title="Contact AACB">
   <Header title="Contact Us" />
   <main>
     <section class="intro">
-      <h2>Contact Us</h2>
-      <p>
-        If you have any questions or need assistance, please feel free to contact us.
-      </p>
+      <h2>Contact Annapolis Area Community Boating</h2>
+      <p>Get in touch with us for any inquiries or support.</p>
     </section>
 
     <section class="contact-form">
@@ -24,9 +22,9 @@ import Footer from '../../components/Footer.astro';
         <input type="email" id="email" name="email" required>
 
         <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+        <textarea id="message" name="message" required></textarea>
 
-        <button type="submit">Submit</button>
+        <button type="submit">Send Message</button>
       </form>
     </section>
 
@@ -49,42 +47,5 @@ import Footer from '../../components/Footer.astro';
     color: black;
     font-size: 20px;
     line-height: 1.6;
-  }
-
-  .contact-form {
-    margin-top: 20px;
-  }
-
-  .contact-form form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .contact-form label {
-    margin-bottom: 5px;
-  }
-
-  .contact-form input[type="text"],
-  .contact-form input[type="email"],
-  .contact-form textarea {
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    width: 100%;
-  }
-
-  .contact-form button[type="submit"] {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  .contact-info {
-    margin-top: 20px;
   }
 </style>

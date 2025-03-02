@@ -1,3 +1,28 @@
 {
-  "template": "astro"
+  "template": "astro",
+  "socialMedia": {
+    "facebook": "#",
+    "instagram": "#",
+    "youtube": "#",
+    "twitter": "#"
+  },
+  "contactInfo": {
+    "address": "123 Main Street, Annapolis, MD",
+    "phone": "(666) 456-7890",
+    "email": "info@aaccb.org"
+  },
+  "donateUrl": "#",
+  "aacbLogoUrl": "/logo.svg",
+  "events": [
+    {
+      "name": "Sailing Clinic",
+      "date": "July 15, 2024",
+      "time": "9:00 AM - 12:00 PM"
+    },
+    {
+      "name": "Kayaking Tour",
+      "date": "July 22, 2024",
+      "time": "1:00 PM - 4:00 PM"
+    }
+  ]
 }

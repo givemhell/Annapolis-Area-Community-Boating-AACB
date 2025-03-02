@@ -1,0 +1,42 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout title="Volunteer with AACB">
+  <Header title="Volunteer" />
+  <main>
+    <section class="intro">
+      <h2>Volunteer with Annapolis Area Community Boating</h2>
+      <p>Join us in supporting our mission through volunteering.</p>
+    </section>
+
+    <section class="volunteer-opportunities">
+      <h3>Volunteer Opportunities</h3>
+      <ul>
+        <li>Sailing instructor</li>
+        <li>Event support</li>
+        <li>Administrative assistance</li>
+      </ul>
+    </section>
+
+    <section class="how-to-volunteer">
+      <h3>How to Volunteer</h3>
+      <p>Information on how to sign up as a volunteer.</p>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: black;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+</style>

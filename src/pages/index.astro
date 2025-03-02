@@ -2,6 +2,9 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import config from '../../config.json';
+
+const { donateUrl, events } = config;
 ---
 
 <Layout title="Annapolis Area Community Boating">
@@ -43,22 +46,22 @@ import Footer from '../components/Footer.astro';
 
     <section class="upcoming-events">
       <h2>Upcoming Events</h2>
+      <h2>Upcoming Events</h2>
       <div class="events">
-        <div class="event">
-          <h3>Sailing Clinic</h3>
-          <p>Date: July 15, 2024</p>
-        </div>
-        <div class="event">
-          <h3>Kayaking Tour</h3>
-          <p>Date: July 22, 2024</p>
-        </div>
+        {events.map((event) => (
+          <div class="event">
+            <h3>{event.name}</h3>
+            <p>Date: {event.date}</p>
+            <p>Time: {event.time}</p>
+          </div>
+        ))}
       </div>
       <a href="/events">View Full Calendar</a>
     </section>
 
     <section class="call-to-action">
       <a href="/volunteer" class="cta-button">Join Us Today</a>
-      <a href="/donate" class="cta-button">Donate Now</a>
+      <a href={donateUrl} class="cta-button">Donate Now</a>
     </section>
   </main>
   <Footer />
@@ -163,6 +166,7 @@ import Footer from '../components/Footer.astro';
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    text-align: left;
   }
 
   /* Call to Action Section */
