@@ -7,20 +7,20 @@
     "twitter": "#"
   },
   "contactInfo": {
-    "address": "123 Main Street, Annapolis, MD",
-    "phone": "(666) 456-7890",
+    "address": "210 Legion Ave, Unit 6785, Annapolis, MD",
+    "phone": "(301) 332-1864",
     "email": "info@aaccb.org"
   },
   "donateUrl": "#",
   "aacbLogoUrl": "/logo.svg",
   "events": [
     {
-      "name": "Sailing Clinic",
+      "name": "Sailing Clinic 123",
       "date": "July 15, 2024",
       "time": "9:00 AM - 12:00 PM"
     },
     {
-      "name": "Kayaking Tour",
+      "name": "Kayaking Tour abc",
       "date": "July 22, 2024",
       "time": "1:00 PM - 4:00 PM"
     }
