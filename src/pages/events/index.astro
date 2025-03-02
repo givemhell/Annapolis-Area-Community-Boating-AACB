@@ -3,7 +3,6 @@ import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import * as fs from 'node:fs';
-import EventCalendarComponent from './EventCalendarComponent';
 
 const config = JSON.parse(fs.readFileSync('./config.json').toString());
 const events = config.events;
@@ -14,12 +13,26 @@ const events = config.events;
   <main>
     <section class="intro">
       <h2>Upcoming Events</h2>
-      <p>Check out our events for training sessions, safety seminars, races, and social meet-ups.</p>
+      <p>Check out our calendar of events for training sessions, safety seminars, races, and social meet-ups.</p>
     </section>
 
-    <section class="event-calendar">
-      <h3>Calendar</h3>
-      <EventCalendarComponent client:load />
+    <section class="event-list">
+      <h3>Events</h3>
+      <ul>
+        {events.map((event) => (
+          <li>
+            <h4>{event.name}</h4>
+            <p>Date: {event.date}</p>
+            <p>Time: {event.time}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="calendar">
+      <h3>Event Calendar</h3>
+      <p>Interactive calendar of events with filters for event type.</p>
+      <p>Event types: Training, Competitions, Socials, Fundraisers.</p>
     </section>
   </main>
   <Footer />

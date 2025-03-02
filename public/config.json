@@ -15,12 +15,12 @@
   "aacbLogoUrl": "/logo.svg",
   "events": [
     {
-      "name": "Sailing Clinic 1",
+      "name": "Sailing Clinic",
       "date": "July 15, 2024",
       "time": "9:00 AM - 12:00 PM"
     },
     {
-      "name": "Kayaking Tour 2",
+      "name": "Kayaking Tour",
       "date": "July 22, 2024",
       "time": "1:00 PM - 4:00 PM"
     }
