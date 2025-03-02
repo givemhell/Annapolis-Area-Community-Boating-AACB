@@ -1,0 +1,56 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout title="AACB Programs">
+  <Header title="AACB Programs" />
+  <main>
+    <section class="intro">
+      <h2>Our Programs</h2>
+      <p>
+        Overview of programs offered by AACB. Includes: Youth and family Boating Education, Youth Sailing, Standup Paddleboarding (SUP), Kayaking, and Powerboat Certification, etc.
+      </p>
+    </section>
+
+    <section class="youth-programs">
+      <h3>Youth Programs</h3>
+      <p>Overview of all youth programs and the importance of boating education.</p>
+      <ul>
+        <li>Sailing</li>
+        <li>Kayaks</li>
+        <li>Paddleboards</li>
+        <li>Powerboats</li>
+      </ul>
+    </section>
+
+    <section class="adult-programs">
+      <h3>Adult Programs</h3>
+      <p>Overview of adult programs for new and experienced boaters.</p>
+      <ul>
+        <li>Certification Courses</li>
+        <li>Recreational Boating</li>
+      </ul>
+    </section>
+
+    <section class="high-school-sailing">
+      <h3>High School Interscholastic Sailing</h3>
+      <p>Information on how AACB supports local high school sailing teams.</p>
+      <p>Competition opportunities and sailing community-building.</p>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: black;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+</style>

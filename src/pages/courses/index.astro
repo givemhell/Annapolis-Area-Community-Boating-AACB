@@ -1,0 +1,50 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout title="AACB Courses">
+  <Header title="AACB Courses" />
+  <main>
+    <section class="intro">
+      <h2>Available Courses</h2>
+      <p>Detailed breakdown of available courses for various skill levels.</p>
+      <p>Separate sections for required and optional courses.</p>
+    </section>
+
+    <section class="required-courses">
+      <h3>Required Courses</h3>
+      <ul>
+        <li>Boating Safety 101</li>
+        <li>First Aid/CPR</li>
+        <li>Introduction to Sailing</li>
+        <li>Powerboat Safety</li>
+      </ul>
+    </section>
+
+    <section class="optional-courses">
+      <h3>Optional Courses</h3>
+      <ul>
+        <li>Advanced Sailing Techniques</li>
+        <li>Navigation and Chart Reading</li>
+        <li>Marine Weather</li>
+        <li>Standup Paddleboarding</li>
+        <li>Kayaking Safety</li>
+      </ul>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: black;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+</style>

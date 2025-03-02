@@ -1,0 +1,67 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout title="Donate to AACB">
+  <Header title="Donate" />
+  <main>
+    <section class="intro">
+      <h2>Donate to Support AACB</h2>
+      <p>Your donation helps us provide boating education and opportunities to the community.</p>
+    </section>
+
+    <section class="donation-form">
+      <h3>Make a Donation</h3>
+      <form>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" value="25" />
+        <button type="submit">Donate</button>
+      </form>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: black;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  .donation-form {
+    margin-top: 20px;
+  }
+
+  .donation-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .donation-form label {
+    margin-bottom: 5px;
+  }
+
+  .donation-form input[type="number"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  .donation-form button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>

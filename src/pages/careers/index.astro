@@ -1,0 +1,56 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout title="Marine & Maritime Careers">
+  <Header title="Marine & Maritime Careers" />
+  <main>
+    <section class="intro">
+      <h2>Career Opportunities</h2>
+      <p>List of local marine and maritime career paths.</p>
+      <p>Partnership with employers in the industry.</p>
+    </section>
+
+    <section class="career-paths">
+      <h3>Career Paths</h3>
+      <ul>
+        <li>Shipbuilding</li>
+        <li>Boating Retail</li>
+        <li>Sailing Instructors</li>
+        <li>Dock Workers</li>
+        <li>Marine Biology</li>
+      </ul>
+    </section>
+
+    <section class="featured-employers">
+      <h3>Featured Employers</h3>
+      <ul>
+        <li>Employer 1</li>
+        <li>Employer 2</li>
+      </ul>
+    </section>
+
+    <section class="career-resources">
+      <h3>Career Resources</h3>
+      <ul>
+        <li><a href="#">Job Board 1</a></li>
+        <li><a href="#">Training Program 1</a></li>
+      </ul>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: black;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+</style>

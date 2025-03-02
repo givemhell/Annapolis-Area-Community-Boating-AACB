@@ -1,0 +1,54 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout title="Interscholastic Sailing">
+  <Header title="Interscholastic Sailing" />
+  <main>
+    <section class="intro">
+      <h2>High School Sailing Programs</h2>
+      <p>Overview of the interscholastic sailing program in Annapolis.</p>
+      <p>Support provided by AACB for local teams.</p>
+    </section>
+
+    <section class="how-to-get-involved">
+      <h3>How to Get Involved</h3>
+      <ul>
+        <li>Clubs</li>
+        <li>Teams</li>
+        <li>Volunteer Coaching Opportunities</li>
+      </ul>
+    </section>
+
+    <section class="upcoming-regattas">
+      <h3>Upcoming Regattas</h3>
+      <ul>
+        <li>Regatta 1 - July 5, 2024</li>
+        <li>Regatta 2 - July 12, 2024</li>
+      </ul>
+    </section>
+
+    <section class="partners-sponsors">
+      <h3>Partners and Sponsors</h3>
+      <ul>
+        <li>School 1</li>
+        <li>Local Business 1</li>
+      </ul>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: black;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+</style>
