@@ -12,7 +12,8 @@
     "email": "info@aaccb.org"
   },
   "donateUrl": "#",
-  "aacbLogoUrl": "/logo.svg",
+  "aacbLogoUrl": "/logo.png",
+  "bannerImageUrl": "/banner.png",
   "events": [
     {
       "name": "Sailing Clinic 1",

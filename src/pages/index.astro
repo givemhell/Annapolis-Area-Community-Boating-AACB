@@ -4,14 +4,14 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import config from '../../config.json';
 
-const { donateUrl, events } = config;
+const { donateUrl, events, bannerImageUrl } = config;
 ---
 
 <Layout title="Annapolis Area Community Boating">
   <Header title="AACB" />
   <main>
     <section class="hero">
-      <img src="/hero-image.jpg" alt="Boats on the water" />
+      <img src={bannerImageUrl} alt="Boats on the water" />
       <a href="/programs" class="cta-button">Get Started - Explore Our Programs</a>
     </section>
 
